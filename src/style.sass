@@ -1,0 +1,197 @@
+body, header, footer, ul, li, p
+  margin: 0
+  padding: 0
+  line-height: 1.0
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif
+
+h1, h2, h3, h4
+  margin: 0
+  padding: 0
+  font-weight: 600
+
+html
+  font-size: 62.5%
+
+body
+  display: grid
+  grid-template-rows: auto auto auto
+  font-size: 1.6rem
+  color: #000
+
+  @media screen and (max-width: 479px)
+    grid-template-columns: 1.5rem 1fr 1.5rem
+
+  @media screen and (min-width: 480px) and (max-width: 1279px)
+    grid-template-columns: 1fr 75% 1fr
+
+  @media screen and (min-width: 1280px)
+    grid-template-columns: 1fr 50% 1fr
+
+  & > header.site-header
+    grid-row: 1
+    grid-column: 2
+    padding: 3.5rem 0 3rem
+
+  & > main
+    grid-row: 2
+    grid-column: 2
+
+  & > footer.site-footer
+    grid-row: 3
+    grid-column: 2
+    padding: 3rem 0
+  
+  & > nav.side-nav
+    position: fixed
+    top: 3.5rem
+    right: 3rem
+
+a
+  color: inherit
+
+header.site-header
+
+  nav
+    a
+      position: relative
+      left: -1rem
+      display: inline-block
+      padding: 0 1rem
+      text-decoration: none
+      color: inherit
+
+main
+  border-top: solid 0.1rem #333
+  border-bottom: solid 0.1rem #333
+
+  h1
+    padding: 1rem 0
+    font-size: 2rem
+
+  section
+    padding: 3rem 0 4rem
+
+    & + section
+      border-top: solid 0.1rem #333
+
+    ul
+      li
+        margin: 1rem 0
+        list-style: none
+
+        a
+          display: block
+          padding: 1rem 1.5rem
+          font-size: 1.3rem
+          line-height: 1.6
+          text-decoration: none
+          background: hsl(190, 75%, 70%)
+          border-radius: 1.5rem
+
+          h1
+            padding: 0
+            font-size: 1.8rem
+
+          ul
+            li
+              display: inline-block
+
+              & + li
+                margin-left: 1rem
+
+  article
+    padding: 1rem 0
+
+    h2
+      margin: 3rem 0 0
+      padding: 2rem 0
+      border-top: solid 0.1rem #333
+
+    h3
+      margin: 3rem 0 0
+  
+    p
+      margin: 1rem 0
+      line-height: 1.6
+
+    p > a
+      display: inline-block
+      margin: 1rem 0
+      min-width: 30rem
+      padding: 1.5rem 1.5rem
+      font-size: 1.7rem
+      font-weight: bold
+      line-height: 1.6
+      text-decoration: none
+      background: hsl(190, 75%, 70%)
+      border-radius: 1.5rem
+
+      span
+        display: block
+        font-size: 1.3rem
+        font-weight: normal
+
+    ul
+      padding-left: 2em
+      list-style: square
+
+      li
+        line-height: 2.6rem
+    
+    table
+      margin: 2rem 0 3rem
+      border-collapse: collapse
+
+      th
+        padding: 0.8rem 1rem
+        text-align: left
+        font-weight: normal
+        border-top: solid 0.1rem #CCC
+        border-bottom: solid 0.1rem #CCC
+
+        & + th::before
+          position: relative
+          left: -0.5rem
+          display: inline
+          padding: 0.4rem 0
+          content: ""
+          border-left: 0.1rem solid #CCC
+
+      tbody
+        tr
+          &:nth-child(even)
+            background: #EEE
+
+          td
+            padding: 0.8rem 1rem
+
+    blockquote
+      position: relative
+      margin: 0
+      padding: 0.5rem 1.5rem 0.5rem 6rem
+      background: #EEE
+      color: #666
+      border-radius: 0.5rem
+
+      &::before
+        display: inline-block
+        position: absolute
+        top: 1rem
+        left: 1rem
+        content: "“"
+        font-family: sans-serif
+        color: #CCC
+        font-size: 90px
+        line-height: 1
+
+    pre
+      padding: 1.5rem
+      line-height: 1.6
+      background: #000
+      color: #FFF
+      border-radius: 0.2rem
+
+footer.site-footer
+  .copyright
+    text-align: right
+    font-size: 1.4rem

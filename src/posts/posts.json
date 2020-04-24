@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2019-05-13",
+    "title": "elm/svgを使ってみよう（SVGの基礎知識）",
+    "path": "https://qiita.com/y047aka/items/2732cf41656369b601bf",
+    "tags": ["Elm", "SVG", "Qiita"]
+  },
+  {
+    "date": "2019-05-05",
+    "title": "環境構築を比較する",
+    "path": "/python/environments",
+    "tags": ["Python", "環境構築"]
+  },
+  {
+    "date": "2019-04-29",
+    "title": "Haskellの歩き方",
+    "path": "/haskell/bookmarks",
+    "tags": ["Haskell"]
+  },
+  {
+    "date": "2019-04-26",
+    "title": "Elmの歩き方",
+    "path": "/elm/bookmarks",
+    "tags": ["Elm"]
+  },
+  {
+    "date": "2019-04-25",
+    "title": "宙畑に掲載されているTellusの記事一覧",
+    "path": "/tellus/sorabatake",
+    "tags": ["Tellus", "宙畑"]
+  },
+  {
+    "date": "2019-04-25",
+    "title": "Tellus公式サイトから",
+    "path": "/tellus/tellus",
+    "tags": ["Tellus"]
+  }
+]
